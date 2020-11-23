@@ -23,98 +23,104 @@
 </head>
 
 <body>
-    <!-- MLH Badge Start -->
-    <a href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
-        target="_blank">
-        <img class="logo--mlh" src="./dist/images/mlh-logo.82d8be29@2x.png" alt="Major League Hacking Badge">
-    </a>
-    <!-- MLH Badge End -->
-
     <!-- Navbar Start -->
     <nav class="mynavbar">
         <ul class="nav-items-list">
-            <li class="nav-item">
+            <div class="lion-logo-container">
                 <img class="logo--lion" src="./dist/images/yuHacks-Logo@2x.png" alt="Yorku Lion Logo">
-            </li>
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#tracks" class="nav-link">Tracks</a></li>
-            <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-            <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
-            <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+            </div>
+            <div class="nav-links-container">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#tracks" class="nav-link">Tracks</a></li>
+                <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+            </div>
+            <div class="mlh-badge-container">
+                <a href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+                    target="_blank">
+                    <img class="logo--mlh" src="./dist/images/mlh-logo.82d8be29@2x.png"
+                        alt="Major League Hacking Badge">
+                </a>
+            </div>
         </ul>
     </nav>
     <!-- Navbar End -->
 
     <!-- Section Home Start -->
     <section id="home" class="home">
-        <div class="date">
-            <p class="heading-medium">Save the date</p>
-            <p class="heading-small">Text here</p>
-            <div class="countdown-container">
-                <div class="countdown">
-                    <div class="countdown__number">
-                        <p id="months" class="number-text">02</p>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 date">
+                    <h1 class="display-4"><b>Save the date</b></h1>
+                    <h2>Text here</h2>
+                    <div class="countdown-container">
+                        <div class="countdown">
+                            <div class="countdown__number">
+                                <p id="months" class="number-text">02</p>
+                            </div>
+                            <div class="countdown__text">
+                                months
+                            </div>
+                        </div>
+                        <div class="countdown">
+                            <div class="countdown__number">
+                                <p id="days" class="number-text">14</p>
+                            </div>
+                            <div class="countdown__text">
+                                days
+                            </div>
+                        </div>
+                        <div class="countdown">
+                            <div class="countdown__number">
+                                <p id="hours" class="number-text">07</p>
+                            </div>
+                            <div class="countdown__text">
+                                hours
+                            </div>
+                        </div>
+                        <div class="countdown">
+                            <div class="countdown__number">
+                                <p id="minutes" class="number-text">12</p>
+                            </div>
+                            <div class="countdown__text">
+                                minutes
+                            </div>
+                        </div>
                     </div>
-                    <div class="countdown__text">
-                        months
+                    <div class="social-media">
+                        <p>Stay connected</p>
+                        <div class="icons-container">
+                            <a href="#" class="social-media__link">
+                                <i class="fab fa-linkedin icon-small"></i>
+                            </a>
+                            <a href="#" class="social-media__link">
+                                <i class="fab fa-instagram icon-small"></i>
+                            </a>
+                            <a href="#" class="social-media__link">
+                                <i class="fab fa-discord icon-small"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="countdown">
-                    <div class="countdown__number">
-                        <p id="days" class="number-text">14</p>
-                    </div>
-                    <div class="countdown__text">
-                        days
-                    </div>
-                </div>
-                <div class="countdown">
-                    <div class="countdown__number">
-                        <p id="hours" class="number-text">07</p>
-                    </div>
-                    <div class="countdown__text">
-                        hours
-                    </div>
-                </div>
-                <div class="countdown">
-                    <div class="countdown__number">
-                        <p id="minutes" class="number-text">12</p>
-                    </div>
-                    <div class="countdown__text">
-                        minutes
+                <div class="col-lg-6 info">
+                    <h1 class="display-4"><b>yuHacks</b></h1>
+                    <h2>Insert a quote longer than yuHacks.</h2>
+                    <span class="event-date">
+                        <i class="far fa-calendar icon-small"></i>
+                        February 13-14, 2020
+                    </span>
+                    <span class="event-location">
+                        <i class="fas fa-map-marker-alt icon-small"></i>
+                        Virtual Event
+                    </span>
+                    <div class="btn-container">
+                        <a href="#" class="btn-regular">Register as a hacker</a>
+                        <a href="#" class="btn-regular">Sponsor us</a>
                     </div>
                 </div>
-            </div>
-            <div class="social-media">
-                <p class="heading-small">Stay connected</p>
-                <div class="icons-container">
-                    <a href="#" class="social-media__link">
-                        <i class="fab fa-linkedin icon-small"></i>
-                    </a>
-                    <a href="#" class="social-media__link">
-                        <i class="fab fa-instagram icon-small"></i>
-                    </a>
-                    <a href="#" class="social-media__link">
-                        <i class="fab fa-discord icon-small"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="info">
-            <h1 class="heading-1">yuHacks</h1>
-            <h3 class="heading-3">Insert a quote longer than yuHacks.</h3>
-            <span class="event-date">
-                <i class="far fa-calendar icon-small"></i>
-                February 13-14, 2020
-            </span>
-            <span class="event-location">
-                <i class="fas fa-map-marker-alt icon-small"></i>
-                Virtual Event
-            </span>
-            <div class="btn-container">
-                <a href="#" class="btn-regular">Register as a hacker</a>
-                <a href="#" class="btn-regular">Sponsor us</a>
             </div>
         </div>
     </section>
@@ -142,7 +148,8 @@
                             in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div class="col-lg-5" data-aos="fade-left" data-aos-offset="150"><img src="dist/images/img1.png" alt="" class="img-fluid"></div>
+                    <div class="col-lg-5" data-aos="fade-left" data-aos-offset="150"><img src="dist/images/img1.png"
+                            alt="" class="img-fluid"></div>
                 </div>
             </div>
         </div>
@@ -150,7 +157,7 @@
 
     <!-- tracks section  -->
     <section id="tracks" class="tracks">
-        <div class="container py-5"  data-aos="fade-up" data-aos-offset="150">
+        <div class="container py-5" data-aos="fade-up" data-aos-offset="150">
             <h1 class="text-right">Tracks</h1>
             <div class="row">
                 <div class="col-sm-2">
@@ -212,68 +219,84 @@
 
     <!-- Section Schedule Start -->
     <section class="schedule" id="schedule">
-        <h3 class="heading-3">Schedule</h3>
-        <p class="brief-text">Some brief text about the event</p>
-        <div class="schedule-container">
-            <div class="event-list event-list--13">
-                <h4 class="date">Feb 13</h4>
-                <div class="event-item">
-                    <span class="event-time">8:00 AM</span>
-                    <span class="event-name">Event Name</span>
+        <div class="container">
+            <h1 class="display-4"><b>Schedule</b></h1>
+            <h2 class="mb-5">Some brief text about the event</h2>
+            <div class="row">
+                <div class="col-lg-6 event-list mb-5 event-list--13">
+                    <h3>Feb 13</h3>
+                    <div class="event-item">
+                        <span class="event-time">8:00 AM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">10:00 AM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">1:30 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">5:00 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">8:00 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">9:30 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
                 </div>
-                <div class="event-item">
-                    <span class="event-time">10:00 AM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">1:30 PM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">5:00 PM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">8:00 PM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">9:30 PM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-            </div>
 
-            <div class="event-list event-list--14">
-                <h4 class="date">Feb 14</h4>
-                <div class="event-item">
-                    <span class="event-time">8:00 AM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">10:00 AM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">1:30 PM</span>
-                    <span class="event-name">Event Name</span>
-                </div>
-                <div class="event-item">
-                    <span class="event-time">5:00 PM</span>
-                    <span class="event-name">Event Name</span>
+                <div class="col-lg-6 mb-5 event-list event-list--14">
+                    <h3>Feb 14</h3>
+                    <div class="event-item">
+                        <span class="event-time">8:00 AM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">10:00 AM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">1:30 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">5:00 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <img src="./dist/images/blue-car.svg" alt="Blue Car Image" class="blue-car">
                 </div>
             </div>
-            <img src="./dist/images/blue-car.svg" alt="Blue Car Image" class="blue-car">
         </div>
     </section>
     <!-- Section Schedule End -->
 
     <!-- Sponsors Section Start -->
     <section class="sponsors" id="sponsors">
-        <h3 class="heading-3">Our Sponsors</h3>
-        <img src="./dist/images/logo-ibm.jpg" alt="IBM Logo" class="logo logo--ibm"></img>
-        <img src="./dist/images/logo-mlh.svg" alt="Major League Hacking Logo" class="logo logo--mlh-2">
-        <img src="./dist/images/logo-jetbrains.svg" alt="Jet Brain Logo" class="logo logo--jetbrain">
-        <img src="./dist/images/logo-sticker-mule.svg" alt="Sticker Mule Logo" class="logo logo--stickermule">
+        <div class="container align-items-center">
+            <div class="row d-flex justify-content-center">
+                <h1 class="display-4"><b>Our Sponsors</b></h1>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <img src="./dist/images/logo-ibm.jpg" alt="IBM Logo" class="img-fluid logo--ibm"></img>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-5">
+                    <img src="./dist/images/logo-mlh.svg" alt="Major League Hacking Logo" class="img-fluid logo--mlh-2">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-5">
+                    <img src="./dist/images/logo-jetbrains.svg" alt="Jet Brain Logo" class="img-fluid logo--jetbrains">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-5">
+                    <img src="./dist/images/logo-sticker-mule.svg" alt="Sticker Mule Logo" class="img-fluid logo--stickermule">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Sponsors Section End -->
 
