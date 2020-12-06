@@ -38,10 +38,7 @@ section {
   .navbar .logo--mlh {
     overflow: visible;
     height: 3.5rem;
-    top: 0;
-    transition: all 200ms ease-out; }
-    .navbar .logo--mlh:hover {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+    top: 0; }
     @media only screen and (max-width: 767px) {
       .navbar .logo--mlh {
         position: fixed;
@@ -49,7 +46,10 @@ section {
         left: 85vw; } }
     .navbar .logo--mlh img {
       width: 5.125rem;
-      height: 8.1875rem; }
+      height: 8.1875rem;
+      transition: all 200ms ease-out; }
+      .navbar .logo--mlh img:hover {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
       @media only screen and (max-width: 767px) {
         .navbar .logo--mlh img {
           width: 3.125rem;
@@ -108,7 +108,11 @@ section {
     text-transform: uppercase; }
   .home .date .social-media__link {
     color: #919191;
-    font-size: 2rem; }
+    font-size: 2rem;
+    transition: all 100ms ease-in; }
+    .home .date .social-media__link:hover {
+      transform: translateY(-0.3rem);
+      color: #ababab; }
   .home .info {
     padding-top: 3.625rem; }
     .home .info h1 {
@@ -258,7 +262,14 @@ section {
 
 .footer a {
   color: #2d698a;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 .5rem;
+  transition: all 100ms ease-in; }
+  .footer a:hover {
+    transform: translateY(-0.2rem);
+    color: #3a86b0; }
 
 .sponsors {
   height: 100vh;

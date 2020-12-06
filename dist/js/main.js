@@ -122,5 +122,10 @@ function switchClick(track) {
   }
 }
 
+// Navbar collapse on link click
+$('.navbar-nav>li>a').on('click', function () {
+  $('.navbar-collapse').collapse('hide');
+});
+
 // Init AOS
 AOS.init();
