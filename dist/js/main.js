@@ -1,4 +1,5 @@
 // Countdown to event date
+// Countdown to event date
 const countDown = (
   eleDaysId,
   EleHoursId,
@@ -46,10 +47,13 @@ const countDown = (
       useGrouping: false
     }
   );
-  document.getElementById(eleSecondsId).innerHTML = seconds.toLocaleString('en-US', {
-    minimumIntegerDigits: 2,
-    useGrouping: false
-  });
+  document.getElementById(eleSecondsId).innerHTML = seconds.toLocaleString(
+    'en-US',
+    {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }
+  );
 
   setTimeout(() => {
     countDown(eleDaysId, EleHoursId, EleMinutesId, eleSecondsId, eDate);
@@ -76,56 +80,87 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 // Track switching
 var data = {
   track1: {
-    title: 'Track Title 1',
+    track: 'track1',
+    title: 'Education Challenge',
     content:
-      'Track Content 1, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
+      'Tired of Zoom University? This challenge is open to teams who want to rethink education. Whether tackling the struggles of online education or developing an app that enhances traditional education, teams will have their work cut out for them with this track!',
+    imagePath: 'dist/images/Kids_Studying_from_Home-pana_2.svg'
   },
   track2: {
-    title: 'Track Title 2',
+    track: 'track2',
+    title: 'Environment Challenge',
     content:
-      'Track Content 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
+      'Have an idea for a hack that looks to solve pressing environmental issues? This challenge is open to teams who want to tackle big problems like climate change, food waste, and biodiversity loss (just to name a few).',
+    imagePath: 'dist/images/Environment-rafiki.svg'
   },
   track3: {
-    title: 'Track Title 3',
+    track: 'track3',
+    title: 'Media Challenge',
     content:
-      'Track Content 3, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
+      'Looking to solve the spread of misinformation? Interested in tackling the issues highlighted by the Social Dilemma? This challenge is open to teams who would like to take on modern media. Problems such as social media dependency, fake news, and body shaming need solving!',
+    imagePath: 'dist/images/Mobile_Marketing-cuate_3.svg'
+  },
+  track4: {
+    track: 'track4',
+    title: 'Economy Challenge',
+    content:
+      'Economic challenges such as poverty, rise of powers, and pandemics have the potential to destabilize entire continents. This challenge is open to teams who would like to explore solutions to some of the biggest problems available.',
+    imagePath: 'dist/images/Finance-cuate.svg'
+  },
+  track5: {
+    track: 'track5',
+    title: 'Open Challenge',
+    content:
+      'Have an idea that doesn’t quite fit the bill of our other challenges? This challenge is open to teams who would like to put their creativity to the test and submit a project that does not meet the theme of the other yuHacks challenges.',
+    imagePath: 'dist/images/Creative_thinking-pana_1.svg'
+  },
+  track6: {
+    track: 'track6',
+    title: 'New Hacker Challenge',
+    content:
+      'New to hackathons? This challenge is open to teams where a majority of the members are attending their first hackathon.',
+    imagePath: 'dist/images/Coding-pana.svg'
+  },
+  track7: {
+    track: 'track7',
+    title: 'Non-Technical Challenge',
+    content:
+      'Not much of a developer? Still want to tackle challenges and explore ideas? This challenge is open to teams who are submitting a project in which they did not write any code. Examples: business proposals, powerpoint presentations, or merely a pitch.',
+    imagePath: 'dist/images/Mind_map-cuate.svg'
   }
 };
 
+var icons = document.querySelector('#icons');
+icons.addEventListener('click', switchClick, false);
+
 function switchClick(track) {
+  // Remove all active class
+  var allIcon = document.querySelectorAll('#icons .btn i');
+  allIcon.forEach((icon) => {
+    icon.classList.remove('active');
+  });
+
   var title = document.getElementById('trackTitle');
   var content = document.getElementById('trackContent');
-  var icon1 = document.getElementById('trackIcon1');
-  var icon2 = document.getElementById('trackIcon2');
-  var icon3 = document.getElementById('trackIcon3');
+  var image = document.getElementById('trackImage');
 
-  if (track === 'track1') {
-    title.innerHTML = data.track1.title;
-    content.innerHTML = data.track1.content;
-    icon1.classList.add('active');
-    icon2.classList.remove('active');
-    icon3.classList.remove('active');
-  }
-  if (track === 'track2') {
-    title.innerHTML = data.track2.title;
-    content.innerHTML = data.track2.content;
-    icon1.classList.remove('active');
-    icon2.classList.add('active');
-    icon3.classList.remove('active');
-  }
-  if (track === 'track3') {
-    title.innerHTML = data.track3.title;
-    content.innerHTML = data.track3.content;
-    icon1.classList.remove('active');
-    icon2.classList.remove('active');
-    icon3.classList.add('active');
+  var clickedIcon = track.target.id;
+  var length = Object.keys(data).length;
+  for (i = 0; i < length; i++) {
+    var o = Object.values(data);
+    if (o[i].track === clickedIcon) {
+      title.innerHTML = o[i].title;
+      content.innerHTML = o[i].content;
+      image.src = o[i].imagePath;
+      track.target.classList.add('active');
+    }
   }
 }
+
+// Init AOS
+AOS.init();
 
 // Navbar collapse on link click
 $('.navbar-nav>li>a').on('click', function () {
   $('.navbar-collapse').collapse('hide');
 });
-
-// Init AOS
-AOS.init();

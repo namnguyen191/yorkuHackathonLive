@@ -133,6 +133,7 @@ section {
       .home .info .btn-container .btn {
         background-color: #097078;
         color: #ffffff;
+        margin-top: 1rem;
         transition: all 200ms ease-in; }
         @media only screen and (max-width: 358px) {
           .home .info .btn-container .btn {
@@ -272,7 +273,6 @@ section {
     color: #3a86b0; }
 
 .sponsors {
-  height: 100vh;
   position: relative; }
   .sponsors h1 {
     color: #2d698a; }
