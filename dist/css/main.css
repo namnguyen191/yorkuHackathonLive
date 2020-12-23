@@ -161,6 +161,14 @@ section {
       .tracks .track-card {
         border: none;
         padding: 0; } }
+    .tracks .track-card .icons-container {
+      overflow-x: auto; }
+      .tracks .track-card .icons-container::-webkit-scrollbar {
+        height: 0.2rem; }
+      .tracks .track-card .icons-container::-webkit-scrollbar-thumb {
+        background: #a7bbdd; }
+      .tracks .track-card .icons-container .icon-scroll {
+        width: max-content; }
   .tracks img {
     width: 100%;
     height: auto; }

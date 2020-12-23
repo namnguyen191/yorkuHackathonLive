@@ -155,6 +155,20 @@ function switchClick(track) {
       track.target.classList.add('active');
     }
   }
+
+  // Fade in animation
+  $('.track-content-text').css({
+    position: 'relative',
+    opacity: 0,
+    left: '+=100'
+  });
+  $('.track-content-text').animate({ left: 0, opacity: 1 }, 500);
+  $('.track-content-image').css({
+    position: 'relative',
+    opacity: 0,
+    right: '+=100'
+  });
+  $('.track-content-image').animate({ right: 0, opacity: 1 }, 500);
 }
 
 // Init AOS
