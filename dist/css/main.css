@@ -187,9 +187,6 @@ section {
 .schedule {
   color: #51b7cd;
   position: relative; }
-  @media only screen and (max-width: 991px) {
-    .schedule {
-      margin-bottom: 10rem; } }
   .schedule h1 {
     color: #2d698a; }
   .schedule .event-list {
@@ -214,33 +211,6 @@ section {
       align-self: flex-start; }
     .schedule .event-list--14 {
       position: relative; }
-      .schedule .event-list--14 .blue-car {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        transform: translateY(15rem);
-        width: 30rem;
-        height: 30rem; }
-        @media only screen and (max-width: 1199px) {
-          .schedule .event-list--14 .blue-car {
-            width: 23rem;
-            height: 23rem;
-            transform: translate(-2rem, 13rem); } }
-        @media only screen and (max-width: 991px) {
-          .schedule .event-list--14 .blue-car {
-            width: 30rem;
-            height: 30rem;
-            transform: translate(-2rem, 15rem); } }
-        @media only screen and (max-width: 767px) {
-          .schedule .event-list--14 .blue-car {
-            width: 27rem;
-            height: 27rem;
-            transform: translate(-2rem, 15rem); } }
-        @media only screen and (max-width: 540px) {
-          .schedule .event-list--14 .blue-car {
-            width: 75vw;
-            height: 27rem;
-            transform: translate(-2rem, 17rem); } }
 
 .questions {
   position: relative; }
